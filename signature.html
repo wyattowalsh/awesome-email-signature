@@ -1,0 +1,118 @@
+<!-- 
+=================================================================================================================================================================	
+*** DOCUMENT SETUP *** 
+ -->
+<!DOCTYPE html>
+<html>
+<head><!--
+Import font awesome icons and related CSS styles 																					  -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body><!-- 
+=================================================================================================================================================================
+*** SIGNATURE CREATION ***
+
+Notes: 
+	The overall structure of this HTML code to create your email signature is:
+		- a div that contains a single row with two columns (two elements)
+
+			- the first element (left-side) is a div, which itself is composed of two rows
+				- the first row contains your name, each portion of the name as a <span> element 
+				- the second row contains your social media profile links in the form of icons, evenly spread across the row
+
+			- the second element (right-side) is also a div containing your contact information in the form of three (or more) rows and two columns
+				- by default row one is your telephone number with the first element a telephone icon and followed by your number as the second element,
+				- row two is your email address; similarly with a corresponding icon,
+				- and row three is your website URL also with a corresponding icon.
+
+		Notes on Style: Each object within this structure has CSS styling options; just follow the classes
+=================================================================================================================================================================
+
+Code:
+ 																							  -->
+<div class="container">
+	<div class="left">
+<!--
+	Name Section:
+		Feel free to add any additional names you would like to display within the signature
+		- this can be done by adding the following snippet between the last </span> and the </div>
+			<span> YOUR ADDITIONAL NAME </span> 
+		- for example if you would like to include a middle name, replace the the following line of code with:
+			<div class="name-row"><span>< YOUR FIRST NAME HERE ></span><span>< YOUR MIDDLE NAME HERE ></span><span>< YOUR LAST NAME HERE ></span></div>
+-->
+		<p class="name">Your Name Here</p>
+<!--
+	Social Media Profile Section:
+		- Here, you can comment and uncomment social links below as needed. 
+		- Ensure to add your username correctly to the href URL.
+		- You can customize the style of these icons by using corresponding CSS file (styles.css) 
+			- within that file you can style the entire group of icons or customize one by one.
+-->
+
+		<div class="socials">
+<!-- 	Twitter 																																-->		
+			<div class="social">
+				<img class="twitter" src="icons/svg/twitter.svg" alt="Twitter"/>
+			</div>
+<!-- 	LinkedIn 																																-->					
+			<div class="social">
+				<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME-HERE" >
+					<img class='linkedin' src="./icons/png/linkedin.png" />
+				</a>
+			</div>
+<!-- 	Medium 																																    -->					
+			<div class="social">
+				<a href="https://www.medium.com/@YOUR-MEDIUM-USERNAME-HERE" >
+					<img class='medium' src="./icons/png/medium.png" />
+				</a>
+			</div>
+<!-- 	StackOverflow																															-->					
+			<div class="social">
+				<a href="https://stackoverflow.com/story/YOUR-STACKOVERFLOW-USERNAME-HERE">
+					<img class='stack-overflow' src="./icons/png/stack-overflow.png" />
+				</a>
+			</div>
+<!-- 	Quora 																																    -->					
+			<div class="social">
+				<a href="https://www.quora.com/profile/YOUR-QUORA-USERNAME-HERE" >
+					<img class='quora' src="./icons/png/quora.png" />
+				</a>
+			</div>
+<!-- 	Facebook 																																-->					
+			<div class="social">
+				<a href="https://www.facebook.com/YOUR-FACEBOOK-USERNAME-HERE" >
+					<img class='facebook' src="./icons/png/facebook.png" />
+				</a>
+			</div>
+<!-- 	Instagram 																																-->					
+			<div class="social">
+				<a href="https://www.instagram.com/YOUR-INSTAGRAM-USERNAME-HERE" >
+					<img class='instagram' src="./icons/png/instagram.png" />
+				</a>
+			</div>
+<!-- 	WhatsApp 																																-->					
+			<div class="social">
+				<a href="https://wa.me/<YOUR-FULL-PHONE-NUMBER-IN-INTERNATIONAL-FORMAT" >
+					<img class='whatsapp' src="./icons/png/whatsapp.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class='vertical-line'></div>
+
+	<div class="right">
+<!-- 	Phone Number   																															-->					
+		<div class="contact"><img class='phone-icon' src="./icons/png/phone.png" /><a href="tel:<YOUR-NUMBER-HERE>"> YOUR PHONE NUMBER HERE</a></div>
+<!-- 	Physical Address   																													    -->					
+		<div class="contact"><img class='address-icon' src="./icons/png/home.png" /> YOUR ADDRESS HERE</div>
+<!-- 	Email Address  																															-->					
+		<div class="contact"><img class='email-icon' src="./icons/png/email.png" /><a href="mailto:<YOUR-EMAIL-HERE>"> YOUR EMAIL ADDRESS HERE</a></div>
+<!-- 	Personal Website																														-->					
+		<div class="contact"><img class='website-icon' src="./icons/png/link.png" /><a href="<YOUR-WEBSITE-HERE"> YOUR WEBSITE URL HERE</a></div>
+<!-- 	WeChat ID   																															-->					
+		<div class="contact"><img class='wechat-icon' src="./icons/png/phone.png" /><a href="weixin://"> YOUR WECHAT ID HERE</a></div>
+	</div>
+</div>
+</body>

@@ -1,0 +1,107 @@
+
+
+/*====================================================================================*/
+.container {
+  height: 90%;
+  width: 600px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.left {
+  padding: 25px;
+  margin: auto;
+  vertical-align: middle
+ 
+}
+
+.vertical-line {
+  width: 3px;
+  background-color: black;
+  height: 50px;
+  margin: auto;
+  margin-right: 0;
+  margin-left: 0;
+} 
+
+.right {
+  padding: 25px;
+  margin: auto;
+  font-size: 60%;
+}
+/*====================================================================================*/
+
+
+.name{
+  text-align: center;
+  font-size: 150%
+  
+}
+
+.socials {
+  display: flex;
+  
+}
+
+.social {
+  padding: 3px;
+
+}
+
+.twitter {
+
+}
+
+.linkedin {
+
+}
+
+.medium {
+
+}
+
+.stack-overflow {
+
+}
+
+.quora {
+
+}
+
+.facebook {
+
+}
+
+.instagram {
+
+}
+
+.whatsapp {
+
+}
+
+/*====================================================================================*/
+.contact {
+  padding: 3px;
+}
+
+.phone-icon {
+
+}
+
+.address-icon {
+
+}
+
+.email-icon {
+
+}
+
+.website-icon {
+
+}
+
+.wechat-icon {
+
+}
